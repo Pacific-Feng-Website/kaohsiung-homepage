@@ -1,54 +1,84 @@
-header{
-	margin-bottom: 60px;
+article {
+    display: block;
 }
 
-#Carousel{
-	margin-bottom: 30px;
+body {
+    font-family: "Roboto",sans-serif;
+	background-color: #f9f9f9;
 }
 
-section.Topic div h1.Title{
-	margin-top: 100px;
-	margin-bottom: 100px;
+.featured-post {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-
-section.Content_Topic div.container-md{
-	margin-bottom: 35px;
+article{
+	overflow:hidden;
 }
 
-section.Content_Topic span.SanFrans{
-	letter-spacing: 4px;
-	font-size: 20px; 
-	background-color: #a8835b; 
-	color: #ffffff;
-	padding: 5px;
+.featured-post:hover{
+	opacity: 0.7;
+	transform: scale(1.05);
+	transition: .5s;
 }
 
-section.Content_Topic span.LasVegas{
-	letter-spacing: 4px;
-	font-size: 20px; 
-	background-color: #965c1d; 
-	color: #ffffff;
-	padding: 5px;
-}
-
-section.Content_Topic span.LosAng{
-	letter-spacing: 4px;
-	font-size: 20px; 
-	background-color: #5e4d3b; 
-	color: #ffffff;
-	padding: 5px;
+.featured-post h2 {
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
 }
 
 
-section.Content div.container-md{
-	margin-bottom: 50px;
+.featured-post h2 span {
+    display: inline-block;
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+	margin-left: 20px;
+	margin-bottom:7px;
 }
 
-section.Content span.blank{
-	color: white;
+.blank{
+	margin-bottom: 10px;
 }
 
-section.Content span{
-	letter-spacing: 1.5px;
+
+
+.foodTrip{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1100px){
+	.foodTrip{
+		width: 95vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+.content-wrapper {
+    padding-top: 66px;
+    margin: auto;
+    display: block;
+    width: 1080px;
+}
+
+@media (max-width: 1100px){
+	.content-wrapper {
+		padding-top: 66px;
+		margin: auto;
+		display: block;
+		width: 95vw;
+	}
 }
